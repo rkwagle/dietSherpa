@@ -7,23 +7,29 @@ import Maps from "views/Maps/Maps.jsx";
 import Upgrade from "views/Upgrade/Upgrade.jsx";
 import UserPage from "views/UserPage/UserPage.jsx";
 import Sherpa from "views/Sherpa/Sherpa.jsx";
+import About from "views/About/About.jsx"
 
 var dashRoutes = [
-  // {
-  //   path: "/dashboard",
-  //   name: "Dashboard",
-  //   icon: "design_app",
-  //   component: Dashboard
-  // },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    icon: "design_app",
+    component: Dashboard
+  },
   // { path: "/icons", name: "Icons", icon: "design_image", component: Icons },
   // { path: "/maps", name: "Maps", icon: "location_map-big", component: Maps },
   {
     path: "/sherpa",
-    name: "Sherpa",
+    name: "Keto Sherpa",
     icon: "users_single-02",
     component: Sherpa
   },
-
+  {
+    path: "/about",
+    name: "About",
+    icon: "business_bank",
+    component: About
+  },
   {
     path: "/notifications",
     name: "Notifications",

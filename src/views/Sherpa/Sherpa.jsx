@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
 import FormInputs from 'components/FormInputs/FormInputs.jsx';
-import { Radio } from 'components';
-import { Checkbox } from 'components';
+import Radio from 'components/CustomRadio/CustomRadio.jsx';
+import SimpleCheckbox from 'components/CustomCheckbox/SimpleCheckbox.jsx';
+import Button from 'components/CustomButton/CustomButton.jsx';
 
 import { PanelHeader } from "components";
 
@@ -18,9 +19,9 @@ class Sherpa extends React.Component {
 
                 <CardBody>
                   <div>
-                    <h2>
-                      Tell us about your preferences{" "}
-                    </h2>
+                    <h3>
+                      Let's get started. Tell us about your preferences{" "}
+                    </h3>
 
                   </div>
 
@@ -63,11 +64,35 @@ class Sherpa extends React.Component {
     ]}
 />
 <div>
+Select you gender:
 <Radio
-    label="Unchecked"
-    inputProps={{name:"radio",value:"unchecked"}}
+    label="Male"
+    inputProps={{name:"radio",value:"male"}}
+/>
+<Radio
+    label="Female"
+    inputProps={{name:"radio",value:"female"}}
 />
 
+What are your food preferences?
+<SimpleCheckbox
+    label="Plant Based"
+    inputProps={{defaultChecked: true}}
+/>
+<SimpleCheckbox
+    label="Animal Based"
+/>
+
+
+What are you interested today?
+<SimpleCheckbox
+    label="7 day meal plan"
+/>
+<SimpleCheckbox
+    label="Keto Shopping List"
+/>
+
+<Button color="primary" size="lg">Submit</Button>
 
 </div>
 
