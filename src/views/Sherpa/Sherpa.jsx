@@ -19,7 +19,7 @@ class Sherpa extends React.Component {
                 <CardBody>
                   <div>
                     <h2>
-                      Tell us about your preference{" "}
+                      Tell us about your preferences{" "}
                     </h2>
 
                   </div>
